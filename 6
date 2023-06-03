@@ -1,0 +1,14 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Podaj długości boków trójkąta:");
+        double a = double.Parse(Console.ReadLine());
+        double b = double.Parse(Console.ReadLine());
+        double c = double.Parse(Console.ReadLine());
+
+        bool czyRownoboczny = (a == b) && (b == c);
+
+      

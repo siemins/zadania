@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Podaj dwie liczby:");
+        int a = int.Parse(Console.ReadLine());
+        int b = int.Parse(Console.ReadLine());
+
+        int wieksza = (a > b) ? a : b;
+
+        Console.WriteLine("Większa liczba: " + wieksza);
+
+        Console.ReadLine();
+    }
+}

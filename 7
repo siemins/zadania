@@ -1,0 +1,42 @@
+using System;
+
+class Program
+{
+    static bool SprawdzPunkt(double x, double y, double a, double b, double r)
+    {
+        double odleglosc = Math.Sqrt(Math.Pow(x - a, 2) + Math.Pow(y - b, 2));
+        if (odleglosc <= r)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    static void Main()
+    {
+        Console.WriteLine("Podaj współrzędną x punktu P: ");
+        double x = double.Parse(Console.ReadLine());
+        Console.WriteLine("Podaj współrzędną y punktu P: ");
+        double y = double.Parse(Console.ReadLine());
+        Console.WriteLine("Podaj współrzędną x środka koła: ");
+        double a = double.Parse(Console.ReadLine());
+        Console.WriteLine("Podaj współrzędną y środka koła: ");
+        double b = double.Parse(Console.ReadLine());
+        Console.WriteLine("Podaj promień koła: ");
+        double r = double.Parse(Console.ReadLine());
+
+        bool czyPunktWObrebieKola = SprawdzPunkt(x, y, a, b, r);
+
+        if (czyPunktWObrebieKola)
+        {
+            Console.WriteLine("Punkt ({0},{1}) leży w obrębie koła.", x, y);
+        }
+        else
+        {
+            Console.WriteLine("Punkt ({0},{1}) nie leży w obrębie koła.", x, y);
+        }
+    }
+}

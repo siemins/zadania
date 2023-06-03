@@ -1,0 +1,18 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Podaj wagę [kg]:");
+        double waga = double.Parse(Console.ReadLine());
+
+        Console.WriteLine("Podaj wzrost [m]:");
+        double wzrost = double.Parse(Console.ReadLine());
+
+        double bmi = waga / (wzrost * wzrost);
+        Console.WriteLine("BMI: " + bmi);
+
+        Console.ReadLine();
+    }
+}

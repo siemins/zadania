@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Podaj promień koła:");
+        double r = double.Parse(Console.ReadLine());
+
+        double PI = Math.PI;
+        double pole = PI * Math.Pow(r, 2);
+        double obwod = 2 * PI * r;
+
+        Console.WriteLine("Pole koła: " + pole);
+        Console.WriteLine("Obwód koła: " + obwod);
+
+        Console.ReadLine();
+    }
+}
